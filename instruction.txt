@@ -1,0 +1,11 @@
+Program #2
+
+Write a program that will ask you to input your name and your dream job. Print them in a fancy way.
+
+- Create github account
+- Created a new github repository
+- Install and learn how to use "git bash"
+- Upload your programs to github using git bash
+- Record a video of your screen while you do the program and while you run it (less than 1 min)
+- Send the video directly to my messenger or link where I can watch it.
+- Deadline Mar 16, 2024 11:59pm
