@@ -1,6 +1,6 @@
 Program #2
 
-Write a program that will ask you to input your name and your dream job. Print them in a fancy way.
+Write a program that will ask the user's name and dream job. Print them in a fancy way.
 
 - Create github account
 - Created a new github repository

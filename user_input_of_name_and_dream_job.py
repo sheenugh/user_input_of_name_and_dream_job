@@ -33,11 +33,15 @@ def main():
         animate_text("Please enter your name: ", Fore.YELLOW, Style.DIM)
         name = input()
         animate_text(f"Hello, {name}!", Fore.CYAN, Style.NORMAL, 0.1)
-        animate_text("Nice to meet you.", Fore.MAGENTA, Style.BRIGHT)
+        animate_text("Nice to meet you.", name, Fore.MAGENTA, Style.BRIGHT)
     
     else:
-        asking_if_proceeding == "No"
-        print("Thank you for your time.")
+        if asking_if_proceeding == "No":
+            print("Thank you for your time.")
+        else:
+            if asking_if_proceeding != "Yes" and "No":
+                print("Please follow the format.")
+        
 
 
 
