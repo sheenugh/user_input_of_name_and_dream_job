@@ -15,7 +15,7 @@ init()
 
 # || FUNCTIONS ||
 # - Code for the animated text
-def animate_text(text, color=Fore.WHITE, style=Style.NORMAL, delay=0.05):
+def animate_text(text, color=Fore.WHITE, style=Style.NORMAL, delay=0.02):
     for char in text:
         print(f"{color}{style}{char}", end='', flush=True)
         time.sleep(delay)
@@ -33,11 +33,15 @@ def main():
     response = input()
     
     if response == "Yes":
+        print("\n")
         animate_text("Please enter your name: ")
         name = input()
-        animate_text(f"Hello, {name}!", Fore.MAGENTA, Style.NORMAL, 0.1)
+        
+        print("\n")
+        animate_text(f"Hello, {name}!", Fore.MAGENTA, Style.BRIGHT, 0.1)
         animate_text("Nice to meet you.", Fore.MAGENTA, Style.BRIGHT, 0.1)
-        response2_any_response = input("Type any response:")
+        print("Type any response:")
+        response2_any_response = input()
         
         print("\n")
         animate_text("What is your dream job?: ")
@@ -47,13 +51,16 @@ def main():
         animate_text("That's magnificent! Keep pursuing your dream and do not give up. Okay?")
         input("Response: ")
         
+        print("\n")
         animate_text("Well, then, thank you for your time and have a great day!")
         
+        print("-------------------------------------------------------")
         print("\n")
         # - Information of the user
         print("INFORMATION OF THE USER")
         print("Name:", name)
         print("Dream Job:", response3_dream_job)
+        print("-------------------------------------------------------")
     
     else:
         if response == "No":
